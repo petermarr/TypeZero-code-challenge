@@ -78,7 +78,7 @@ for i in range(len(xval)):
     
 m = mnum/mdenom
 
-# now find b, b = ymean - m*xmean
+# now find b, which is the difference between the ymean and m times the xmean
 
 b = ymean - m*xmean
 
@@ -96,9 +96,9 @@ while True:
         break
     # if malformed input, except, loop to beginning of 'while', try again
     except SyntaxError:
-        print("\nMalformed input, please try again.")
+        print("\nMalformed input (syntax), please try again.")
     except TypeError:
-        print("\nMalformed input, please try again.")
+        print("\nMalformed input (type), please try again.")
 
 print("\nThe y-value for the given x-value is: " + str(usery))
 
