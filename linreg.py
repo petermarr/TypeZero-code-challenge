@@ -110,7 +110,9 @@ while True:
         break
     # if malformed input, except, loop to beginning of 'while', try again
     except SyntaxError:
-        print("\nMalformed CSV input, please try again.")
+        print("\nMalformed CSV input (syntax), please try again.")
+    except ValueError:
+        print("\nMalformed CSV input (value), please try again.")
 
 print("\nx values supplied by user: ")
 print(list(userxvals))
