@@ -11,8 +11,11 @@ where [file] is a text file in the same directory, containing data in a specific
 The data in the read file must have the following formatting: each line contains one ordered pair, in the form "x y", where the values are separated by a space. For example:
 
 1 2
+
 3 4
+
 5 6
+
 
 This file format was chosen because it is a typical format for data reported by machines or physical systems; data reported slightly differently, perhaps with a comma separating the values, could be quickly reformatted with a find-and-replace function, or the code could be altered to accept different formats or additional information (for example, the time that each trial was taken).
 
