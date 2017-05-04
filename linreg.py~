@@ -80,8 +80,7 @@ for i in range(len(xval)):
     mdenom += xdiff * xdiff
 
 if mdenom == 0:
-    print("\nAll x-values are the same, so simple linear regression results in division by zero! Exiting.")
-    sys.exit(1)
+    print("All x-values are the same, so simple linear regression results in division by zero! Exiting.")
     
 m = mnum/mdenom
 
